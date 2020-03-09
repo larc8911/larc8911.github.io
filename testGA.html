@@ -30,7 +30,9 @@
     gtag('js', new Date());
     gtag('config', gaid);  
     
-    
+     $('.testliClass').click(function(){
+        gtag('event','testliClass',{'event_category':logId,'event_label':''});
+    }) 
 </script>
 
     
