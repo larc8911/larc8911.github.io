@@ -9,8 +9,8 @@
     </head>
 <body>
 <ul class="testUlClass">
-    <li class="testliClass"><a href="https://www.daum.net/">다음</a></li>
-    <li class="testliClass"><a href="https://www.daum.net/">네이버</a></li>
+    <li class="testliClassDaum"><a >다음</a></li>
+    <li class="testliClassNaver"><a>네이버</a></li>
 </ul>
 
 
@@ -31,8 +31,14 @@
     gtag('js', new Date());
     gtag('config', gaid);
 
-    $('.testliClass').click(function(){
-        gtag('event','testliClass',{'event_category':'/test/test/test','event_label':''});
+    $('.testliClassDaum').click(function(){
+        gtag('event','testliClassdaum',{'event_category':'/test/test/test','event_label':''});
+        location.href= "href="www.daum.net";
+    })
+        
+     $('.testliClassNaver').click(function(){
+        gtag('event','testliClassnaver',{'event_category':'/test/test/test','event_label':''});
+        location.href= "href="www.naver.com";
     })
 </script>
 
