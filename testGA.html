@@ -28,18 +28,15 @@
 
     function gtag()
     {dataLayer.push(arguments);}
-    
+    gtag('js', new Date());
+    gtag('config', gaid);
 
     $('.testliClassDaum').click(function(){
-            gtag('js', new Date());
-    gtag('config', gaid);
         gtag('event','testliClassdaum',{'event_category':'/test/test/test','event_label':''});
         location.href= "http://www.daum.net";
     })
         
      $('.testliClassNaver').click(function(){
-             gtag('js', new Date());
-    gtag('config', gaid);
         gtag('event','testliClassnaver',{'event_category':'/test/test/test','event_label':''});
         location.href= "http://www.naver.com";
     })
